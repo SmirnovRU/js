@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //равно 2010 текст. сначала складывает два числа 10, потом складывает 20 число и 10 текстовую переменные
+        let sum = 10 + 10 + "10";
+        console.log(sum);
+
+        //равно 101010 текст. сначала складывает 10 число и 10 текст, затем складывает 1010 текст и 10 число
+        let sum1 = 10 + "10" + 10;
+        console.log(sum1);
+
+        //равно 30 число. сначала складывает два числа 10 и 10.затем текстовую 10 преобразует в число тк есть унарный плюс и добавляет к полученному результату 20
+        let sum3 = 10 + 10 + +"10";
+        console.log(sum3);
+
+        //равно -бесконечности, наверное потому что пусто равно нулю
+        let result = 10 / -"";
+        console.log(result);
+
+        //равно НаН, потому что не понимает что за число в кавычках. тк десятичная часть пишется через .
+        let result1 = 10 / +"2,5"
+        console.log(result1);
+    </script>
+</body>
+</html>
