@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        'use strict';
+        function mathOperation(num1,num2,operation) {
+            let result = ""
+            switch (operation) {
+                case "sum" :
+                    return result = (num1 + num2);
+                case "subtraction" : 
+                    return result = (num1 - num2);  
+                case "multiplication" :
+                    return  result = (num1 * num2);
+                case "division" :
+                    return  result = (num1 / num2);
+                default:
+                    alert ("Выберите нужную операцию")
+
+            }
+            
+
+       }
+        alert(mathOperation(6,2,"division"));
+
+        alert(mathOperation(6,2,"sum"));
+
+        alert(mathOperation(6,2,"multiplication"));
+
+        alert(mathOperation(6,2,"subtraction"));
+
+        alert(mathOperation(6,2,"subtraon"));
+
+        
+
+        
+
+   </script>
+ 
+</body>
+</html>
