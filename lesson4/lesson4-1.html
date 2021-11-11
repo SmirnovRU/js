@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        'use strict';
+        let x = (prompt ("введите целое число от 0 до 999")) ;
+        let hundreds = Math.trunc(x / 100) ;
+        let tens = Math.trunc((x % 100) / 10);
+        let units = x % 10;
+            if (x == null){ 
+                console.log("Вы нажали `отмена`")} 
+            else if (x == "") {
+                console.log("Вы ничего не ввели")} 
+            else if (!Number.isInteger(Number(x))) {
+                console.log("Вы ввели не целое число")}
+            else if (x > 999) {
+                console.log("Число вне диапазона от 0 до 999 ")}
+            else { 
+                console.log("hundreds: " + hundreds) ;
+                console.log("tens: " + tens) ;
+                console.log("units: " + units);}
+
+        
+
+   </script>
+ 
+</body>
+</html>
